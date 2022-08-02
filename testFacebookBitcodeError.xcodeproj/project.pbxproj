@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FDADA5DDE330F1BE68F0910 /* Pods_testFacebookBitcodeError.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EEED76546E9F07BBA4E84 /* Pods_testFacebookBitcodeError.framework */; };
 		B4A4183F28990F03000D3202 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4183E28990F03000D3202 /* AppDelegate.swift */; };
 		B4A4184128990F03000D3202 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4184028990F03000D3202 /* SceneDelegate.swift */; };
 		B4A4184328990F03000D3202 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4184228990F03000D3202 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		484F4F4A6E02DA02F93FF4D0 /* Pods-testFacebookBitcodeError.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testFacebookBitcodeError.debug.xcconfig"; path = "Target Support Files/Pods-testFacebookBitcodeError/Pods-testFacebookBitcodeError.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A4183B28990F03000D3202 /* testFacebookBitcodeError.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFacebookBitcodeError.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A4183E28990F03000D3202 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4A4184028990F03000D3202 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		B4A4184728990F03000D3202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A4184A28990F03000D3202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4A4184C28990F03000D3202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E03EEED76546E9F07BBA4E84 /* Pods_testFacebookBitcodeError.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testFacebookBitcodeError.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF21AC044D0050A6FEAAC33C /* Pods-testFacebookBitcodeError.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testFacebookBitcodeError.release.xcconfig"; path = "Target Support Files/Pods-testFacebookBitcodeError/Pods-testFacebookBitcodeError.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FDADA5DDE330F1BE68F0910 /* Pods_testFacebookBitcodeError.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6656524C8F3350C945EEF82C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				484F4F4A6E02DA02F93FF4D0 /* Pods-testFacebookBitcodeError.debug.xcconfig */,
+				FF21AC044D0050A6FEAAC33C /* Pods-testFacebookBitcodeError.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73A4DB733DFFF6CBC67357C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E03EEED76546E9F07BBA4E84 /* Pods_testFacebookBitcodeError.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4A4183228990F02000D3202 = {
 			isa = PBXGroup;
 			children = (
 				B4A4183D28990F03000D3202 /* testFacebookBitcodeError */,
 				B4A4183C28990F03000D3202 /* Products */,
+				6656524C8F3350C945EEF82C /* Pods */,
+				73A4DB733DFFF6CBC67357C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A4184F28990F03000D3202 /* Build configuration list for PBXNativeTarget "testFacebookBitcodeError" */;
 			buildPhases = (
+				FA655F9DE9C662A397D95BFE /* [CP] Check Pods Manifest.lock */,
 				B4A4183728990F03000D3202 /* Sources */,
 				B4A4183828990F03000D3202 /* Frameworks */,
 				B4A4183928990F03000D3202 /* Resources */,
+				2DE84B9743DBFA32F144BEA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DE84B9743DBFA32F144BEA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testFacebookBitcodeError/Pods-testFacebookBitcodeError-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testFacebookBitcodeError/Pods-testFacebookBitcodeError-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testFacebookBitcodeError/Pods-testFacebookBitcodeError-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA655F9DE9C662A397D95BFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testFacebookBitcodeError-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4A4183728990F03000D3202 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		B4A4185028990F03000D3202 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484F4F4A6E02DA02F93FF4D0 /* Pods-testFacebookBitcodeError.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		B4A4185128990F03000D3202 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF21AC044D0050A6FEAAC33C /* Pods-testFacebookBitcodeError.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_testFacebookBitcodeError {
+  umbrella header "Pods-testFacebookBitcodeError-umbrella.h"
+
+  export *
+  module * { export * }
+}
